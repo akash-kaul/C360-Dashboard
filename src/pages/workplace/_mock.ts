@@ -379,18 +379,18 @@ radarOriginData.forEach((item) => {
 export default {
   'GET  /api/project/notice': getNotice,
   'GET  /api/activities': getActivities,
-  'GET  /api/fake_chart_data': {
-    visitData,
-    visitData2,
-    salesData,
-    searchData,
-    offlineData,
-    offlineChartData,
-    salesTypeData,
-    salesTypeDataOnline,
-    salesTypeDataOffline,
-    radarData,
-  },
+  // 'GET  /api/fake_chart_data': {
+  //   visitData,
+  //   visitData2,
+  //   salesData,
+  //   searchData,
+  //   offlineData,
+  //   offlineChartData,
+  //   salesTypeData,
+  //   salesTypeDataOnline,
+  //   salesTypeDataOffline,
+  //   radarData,
+  // },
 
   'GET  /api/currentUser': {
     name: 'Serati Ma',

@@ -119,6 +119,7 @@ class Analysis extends Component<
     return '';
   };
 
+
   render() {
     const { rangePickerValue, salesType, currentTabKey } = this.state;
     const { analysis, loading } = this.props;
@@ -155,6 +156,8 @@ class Analysis extends Component<
     );
 
     const activeKey = currentTabKey || (offlineData[0] && offlineData[0].name);
+    console.log("check 2: ");
+    console.log(salesData);
     return (
       <GridContent>
         <React.Fragment>

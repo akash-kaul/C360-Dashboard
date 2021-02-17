@@ -98,7 +98,7 @@ export default {
     {
       key: '1',
       name: 'John Brown',
-      age: 32,
+      age: 75,
       address: 'New York No. 1 Lake Park',
     },
     {

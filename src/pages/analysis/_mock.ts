@@ -1,5 +1,6 @@
 import moment from 'moment';
 import { AnalysisData, RadarData, VisitDataType } from './data.d';
+import { Request, Response } from 'express';
 
 // mock data
 const visitData: VisitDataType[] = [];
@@ -46,6 +47,7 @@ res.then(function(result: any) {
                 y: data[i],
               });
           }
+          console.log("check 1: ");
           console.log(salesData2);
         })
         res.catch(function(result: any) {
@@ -66,12 +68,14 @@ res.then(function(result: any) {
 // }
 
 const salesData = salesData2;
+// const salesData = [];
 // for (let i = 0; i < 12; i += 1) {
 //   salesData.push({
 //     x: `${i + 1}月`,
-//     y: Math.floor(Math.random() * 1000) + 200,
+//     y: 50,
 //   });
 // }
+
 const searchData = [];
 for (let i = 0; i < 50; i += 1) {
   searchData.push({
@@ -234,7 +238,17 @@ const getFakeChartData: AnalysisData = {
   salesTypeDataOffline,
   radarData,
 };
-
+console.log(getFakeChartData);
 export default {
   'GET  /api/fake_chart_data': getFakeChartData,
 };
+
+// export default{
+//   'POST  /api/fake_chart_data': (req: Request, res: Response) => {
+//     res.send({
+//       getFakeChartData
+//     });
+//   }
+// };
+
+
