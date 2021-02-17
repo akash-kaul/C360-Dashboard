@@ -44,8 +44,6 @@ const Model: ModelType = {
     },
     *fetchSalesData(_, { call, put }) {
       const response = yield call(fakeChartData);
-      console.log("check 3: ");
-      console.log(response.salesData);
       yield put({
         type: 'save',
         payload: {
