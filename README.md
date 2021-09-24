@@ -1,3 +1,7 @@
+# SUMMARY
+
+This project is an example UI, desgined using Ant Design Pro, for connecting to a TigerGraph backend database. It uses Ant along with other React components to configure the service and UI layers.
+
 # Ant Design Pro
 
 This project is initialized with [Ant Design Pro](https://pro.ant.design). Follow is the quick guide for how to use.
